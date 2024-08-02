@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/Home.css">
     <link rel="stylesheet" href="css/Strength.css">
     <link rel="stylesheet" href="css/Speed.css">
+    <link rel="stylesheet" href="css/FQA.css">
+    <link rel="stylesheet" href="css/IpFetch.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
 <div>
@@ -46,69 +49,70 @@
                 </p>
                 <button id="strength">Only if necessary</button>
             </div>
-            <div class="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
+<!--            <div class="slider">-->
+<!--                <div class="slides">-->
+<!--                    <input type="radio" name="radio-btn" id="radio1">-->
+<!--                    <input type="radio" name="radio-btn" id="radio2">-->
+<!--                    <input type="radio" name="radio-btn" id="radio3">-->
+<!--                    <input type="radio" name="radio-btn" id="radio4">-->
 
-                    <div class="slide first">
-                        <img src="01.JPG" alt="">
-                    </div>
-                    <div class="slide first">
-                        <img src="02.JPG" alt="">
-                    </div>
-                    <div class="slide first">
-                        <img src="03.JPG" alt="">
-                    </div>
+<!--                    <div class="slide first">-->
+<!--                        <img src="01.JPG" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="slide first">-->
+<!--                        <img src="02.JPG" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="slide first">-->
+<!--                        <img src="03.JPG" alt="">-->
+<!--                    </div>-->
 
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                    </div>
+<!--                    <div class="navigation-auto">-->
+<!--                        <div class="auto-btn1"></div>-->
+<!--                        <div class="auto-btn2"></div>-->
+<!--                        <div class="auto-btn3"></div>-->
+<!--                    </div>-->
 
-                    <div class="navigation-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                    </div>
-                </div>
-            </div>
+<!--                    <div class="navigation-manual">-->
+<!--                        <label for="radio1" class="manual-btn"></label>-->
+<!--                        <label for="radio2" class="manual-btn"></label>-->
+<!--                        <label for="radio3" class="manual-btn"></label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
         </section>
     </header>
+
     <section class="container" >
         <h2>A FIRST CONTENT TITLE FOR THE OUR PAGE</h2>
 
         <p>Acrylic WiFi Heat maps is a tool for WiFi planning and WiFi site survey. It allows <br>for designing, analyzing, and easily detecting WiFi problems as well as generating reports. It works with <br>all WiFi standards, includinWiFi 7.</p>
 
-        <input autocomplete="Enter Your ip address" id="ip" name="ip" required type="text">
-
+       <!-- <input autocomplete="Enter Your ip address" id="ip" name="ip" required type="text">-->
+<!--
         <button><img src="assets/img/ip-arrow.png"></button>
 
         <img src="assets/img/chart.png" id="str">
 
-<!--        <div class="progress">-->
-<!--            <div class="progressCircle">-->
-<!--                <div id="svgWrapper">-->
-<!--                    <svg class="svg" width="220" height="220" viewPort="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg">-->
+        <div class="progress">
+            <div class="progressCircle">
+                <div id="svgWrapper">
+                    <svg class="svg" width="220" height="220" viewPort="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
-<!--                        <defs>-->
-<!--                            <linearGradient id="linear" x1="0" x2="1" y1="0" y2="0">-->
-<!--                                <stop offset="0%"   stop-color="#DD2C41"/>-->
-<!--                                <stop offset="100%" stop-color="#202050"/>-->
-<!--                            </linearGradient>-->
-<!--                        </defs>-->
+                        <defs>
+                            <linearGradient id="linear" x1="0" x2="1" y1="0" y2="0">
+                                <stop offset="0%"   stop-color="#DD2C41"/>
+                                <stop offset="100%" stop-color="#202050"/>
+                            </linearGradient>
+                        </defs>
 
-<!--                        <circle id="bar-bg" r="98" cx="110" cy="110" fill="transparent" stroke-dasharray="615.752" stroke-dashoffset="615.752"></circle>-->
-<!--                        <circle id="bar" r="98" cx="110" cy="110" fill="transparent" stroke-dasharray="615.752" stroke-dashoffset="615.752"></circle>-->
-<!--                    </svg>-->
-<!--                </div>-->
+                        <circle id="bar-bg" r="98" cx="110" cy="110" fill="transparent" stroke-dasharray="615.752" stroke-dashoffset="615.752"></circle>
+                        <circle id="bar" r="98" cx="110" cy="110" fill="transparent" stroke-dasharray="615.752" stroke-dashoffset="615.752"></circle>
+                    </svg>
+                </div>
 
-<!--                <span class="percentage">0%</span>-->
-<!--            </div>-->
-<!--        </div>-->
+                <span class="percentage">0%</span>
+            </div>
+        </div>
         <div class="progress">
             <div class="progressCircle">
                 <div id="svgWrapper">
@@ -128,20 +132,69 @@
         </div>
 
 
-<!--        <div class="controls">-->
-<!--            <p>Enter a number between 0-100</p>-->
-<!--            <input type="number" min="0" max="100" aria-labelledby="submit" value="0">-->
-<!--            <button type="submit" id="submit">Enter</button>-->
-<!--        </div>-->
+        <div class="controls">
+            <p>Enter a number between 0-100</p>
+            <input type="number" min="0" max="100" aria-labelledby="submit" value="0">
+            <button type="submit" id="submit">Enter</button>
+        </div>
 
         <img src="assets/img/location.png" id="location">
-        <label id="speed">Location</label>
+        <label id="speed">Location</label>-->
+<!--        <div class="card">-->
+            <div class="message" id="ipAddress">Fetching IP Address...</div>
+            <button onclick="startSpeedTest()"><img src="assets/img/ip-arrow.png"></button>
+            <div class="result" id="result"></div>
+            <div id="map"></div>
+<!--        </div>-->
+
     </section>
-    <section class="container">
-        <h2>SPEED OF YOUR CONNECTION</h2>
-        <img src="assets/img/speed.png" id="meter">
-    </section>
-    <footer>2024</footer>
+<!--    <section class="container">-->
+<!--        <div class="faq-wrapper">-->
+<!--            <div class="container">-->
+<!--                <h2>FAQ PAGE</h2>-->
+<!--                <div class="faq">-->
+<!--                    <ul id="faq-list">-->
+<!--                        <li class="faq-list-item">-->
+<!--                            <h3 class="question">FQA</h3>-->
+<!--                            <span>+</span>-->
+<!--                            <div>-->
+<!--                                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deleniti dignissimos dolorem earum error, facilis id maiores molestias nesciunt placeat rem saepe voluptatum! Aliquam eos iste pariatur ratione tempore vero?</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="faq-list-item">-->
+<!--                            <h3 class="question">FQA</h3>-->
+<!--                            <span>+</span>-->
+<!--                            <div>-->
+<!--                                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim minus odit quae. Dolor nemo praesentium quas voluptatem! Consectetur cupiditate delectus earum exercitationem fugit, maiores nemo nisi nobis quis tempora.</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="faq-list-item">-->
+<!--                            <h3 class="question">FQA</h3>-->
+<!--                            <span>+</span>-->
+<!--                            <div>-->
+<!--                                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium animi, aspernatur aut cum delectus dolorem doloribus expedita explicabo impedit, ipsam labore neque nostrum obcaecati qui quis veniam veritatis voluptates!</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="faq-list-item">-->
+<!--                            <h3 class="question">FQA</h3>-->
+<!--                            <span>+</span>-->
+<!--                            <div>-->
+<!--                                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, iusto, quidem. Animi assumenda exercitationem magni nam nemo neque possimus quaerat recusandae sed totam! Ad asperiores dolorem labore optio repellendus tempora.</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="faq-list-item">-->
+<!--                            <h3 class="question">FQA</h3>-->
+<!--                            <span>+</span>-->
+<!--                            <div>-->
+<!--                                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum, delectus doloremque ea earum ex facere hic iste iusto nobis nostrum pariatur perspiciatis provident quo quos similique sint tempora temporibus.</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <footer>2024</footer>-->
 <!--    <a class="bear-link" href="https://twitter.com/intent/follow?screen_name=jh3yy" target="_blank" rel="noreferrer noopener">-->
 <!--        <svg class="w-9" viewBox="0 0 969 955" fill="none" xmlns="http://www.w3.org/2000/svg">-->
 <!--            <circle cx="161.191" cy="320.191" r="133.191" stroke="currentColor" stroke-width="20"></circle>-->
@@ -164,4 +217,7 @@
 <script src="assets/jquery-3.7.1.min.js"></script>
 <script src="Js/Body.js"></script>
 <script src="Js/Home.js"></script>
+<script src="Js/FQA.js"></script>
+<script src="Js/IpFetching.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </html>
