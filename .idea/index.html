@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/Navigation.css">
     <link rel="stylesheet" href="css/Home.css">
     <link rel="stylesheet" href="css/Strength.css">
+    <link rel="stylesheet" href="css/Speed.css">
 </head>
 <body>
 <div>
@@ -23,10 +24,10 @@
                         <a class="nav-link " aria-current="page" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
+                        <a class="nav-link" href="#strength">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Gallery">Gallery</a>
+                        <a class="nav-link" href="#speed">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Contact">Contact Me</a>
@@ -43,7 +44,7 @@
                     lifetime. You can uncover the hidden gems, iconic landmarks, and
                     unique cultural treasures that make each destination special.
                 </p>
-                <button>Only if necessary</button>
+                <button id="strength">Only if necessary</button>
             </div>
             <div class="slider">
                 <div class="slides">
@@ -77,28 +78,69 @@
             </div>
         </section>
     </header>
-    <section class="container" id="strength">
+    <section class="container" >
         <h2>A FIRST CONTENT TITLE FOR THE OUR PAGE</h2>
 
         <p>Acrylic WiFi Heat maps is a tool for WiFi planning and WiFi site survey. It allows <br>for designing, analyzing, and easily detecting WiFi problems as well as generating reports. It works with <br>all WiFi standards, includinWiFi 7.</p>
 
         <input autocomplete="Enter Your ip address" id="ip" name="ip" required type="text">
 
-        <button><img src="assets/ip-arrow.png"></button>
+        <button><img src="assets/img/ip-arrow.png"></button>
 
-        <img src="assets/chart.png" id="str">
+        <img src="assets/img/chart.png" id="str">
 
-        <!--    <figure class="chart" data-percent="75">-->
-        <!--&lt;!&ndash;      <figcaption>HTML</figcaption>&ndash;&gt;-->
-        <!--      <svg width="200" height="200">-->
-        <!--        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>-->
-        <!--      </svg>-->
-        <!--    </figure>-->
+<!--        <div class="progress">-->
+<!--            <div class="progressCircle">-->
+<!--                <div id="svgWrapper">-->
+<!--                    <svg class="svg" width="220" height="220" viewPort="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg">-->
 
-        <img src="assets/location.png" id="chart">
-        <label>Location</label>
+<!--                        <defs>-->
+<!--                            <linearGradient id="linear" x1="0" x2="1" y1="0" y2="0">-->
+<!--                                <stop offset="0%"   stop-color="#DD2C41"/>-->
+<!--                                <stop offset="100%" stop-color="#202050"/>-->
+<!--                            </linearGradient>-->
+<!--                        </defs>-->
+
+<!--                        <circle id="bar-bg" r="98" cx="110" cy="110" fill="transparent" stroke-dasharray="615.752" stroke-dashoffset="615.752"></circle>-->
+<!--                        <circle id="bar" r="98" cx="110" cy="110" fill="transparent" stroke-dasharray="615.752" stroke-dashoffset="615.752"></circle>-->
+<!--                    </svg>-->
+<!--                </div>-->
+
+<!--                <span class="percentage">0%</span>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="progress">
+            <div class="progressCircle">
+                <div id="svgWrapper">
+                    <svg class="svg" width="140" height="130" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="linear" x1="0" x2="1" y1="0" y2="0">
+                                <stop offset="0%" stop-color="#DD2C41"/>
+                                <stop offset="100%" stop-color="#202050"/>
+                            </linearGradient>
+                        </defs>
+                        <circle id="bar-bg" r="49" cx="60" cy="60" fill="transparent" stroke-dasharray="307.88" stroke-dashoffset="307.88"></circle>
+                        <circle id="bar" r="49" cx="60" cy="60" fill="transparent" stroke-dasharray="307.88" stroke-dashoffset="307.88"></circle>
+                    </svg>
+                </div>
+                <span class="percentage">0%</span>
+            </div>
+        </div>
+
+
+<!--        <div class="controls">-->
+<!--            <p>Enter a number between 0-100</p>-->
+<!--            <input type="number" min="0" max="100" aria-labelledby="submit" value="0">-->
+<!--            <button type="submit" id="submit">Enter</button>-->
+<!--        </div>-->
+
+        <img src="assets/img/location.png" id="location">
+        <label id="speed">Location</label>
     </section>
-   <section class="container"></section>
+    <section class="container">
+        <h2>SPEED OF YOUR CONNECTION</h2>
+        <img src="assets/img/speed.png" id="meter">
+    </section>
     <footer>2024</footer>
 <!--    <a class="bear-link" href="https://twitter.com/intent/follow?screen_name=jh3yy" target="_blank" rel="noreferrer noopener">-->
 <!--        <svg class="w-9" viewBox="0 0 969 955" fill="none" xmlns="http://www.w3.org/2000/svg">-->
