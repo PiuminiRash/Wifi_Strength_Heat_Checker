@@ -12,7 +12,7 @@
 .container:nth-child(2) h2 {
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 0;
+    margin-top: 2%;
 }
 
 .container:nth-child(2) p {
@@ -26,9 +26,9 @@
 
 .container:nth-child(2) button {
     width: 2%;
-    height: 5%;
+    height: 4.5%;
     position: absolute;
-    top: 124%;
+    top: 128%;
     right: 4%;
     background-color: white;
     opacity: 20%;
@@ -64,10 +64,10 @@
 }
 
 #location{
-    width: 5%;
-    height: 10%;
+    width: 10%;
+    height: 15%;
     position: absolute;
-    right: 20%;
+    right: 15%;
     top: 165%;
 }
 
@@ -79,87 +79,15 @@
     top: 178%;
 }
 
-/*chart*/
-:root {
-    --base: #202050;
-    --primary: #DD2C41;
-    --neutralLight: #e8e8e8;
-    --neutralLightest: #666666;
-}
-
-.progress {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 72%;
-    margin-top: 5%;
-}
-
-.progressCircle {
-    position: relative;
-    padding: 2rem;
-}
-
-.svg {
-    transform: rotate(-90deg);
-    margin: auto;
-}
-
-circle {
-    transition: stroke-dashoffset 1s linear;
-    stroke-width: 1.5em;
-    stroke: var(--neutralLight);
-}
-
-#bar-bg {
-    stroke-dashoffset: 0;
-}
-
-#bar {
-    stroke: url('#linear');
-}
-
-.percentage {
-    position: absolute;
-    left: 0;
-    right: 5%;
-    text-align: center;
-    top: 55%;
-    transform: translateY(-50%);
-    color: var(--base);
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .controls {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/*input {*/
-/*    font-size: 100%;*/
-/*    padding: 0.5rem 1.25rem;*/
-/*    background: var(--neutralLightest);*/
-/*    border: 0.1rem solid var(--neutralLight);*/
-/*    border-radius: 1.5rem;*/
-/*    margin-bottom: 1rem;*/
-/*}*/
-
-/*:focus {*/
-/*     outline: 0;*/
-/*     border-color: var(--base);*/
-/* }*/
-
-
-/*button {*/
-/*    transition: background 0.2s ease;*/
-/*    padding: 1rem 2rem;*/
-/*    background: var(--base);*/
-/*    border: 0;*/
-/*    color: var(--neutralLightest);*/
-/*    border-radius: 3rem;*/
-/*    text-transform: uppercase;*/
-/*    margin-bottom: 1rem;*/
-/*    cursor: pointer;*/
-/*}*/
+#mbps {
+    position: absolute;
+    top: 150%;
+    right: 10%;
+    font-size: 2rem;
+}
