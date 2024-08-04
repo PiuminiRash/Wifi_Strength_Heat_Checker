@@ -6,16 +6,19 @@
 }
 
 #faq-list {
-    width: 500px;
+    width: 80%;
+    background-color: white;
+    opacity: 50%;
     margin: 0 auto;
-    padding: 0;
+    margin-top: 5%;
+    padding: 10px 10px 10px 10px;
     list-style: none;
-    border-top:1px solid #ccc;
+    border-top:1px solid #ffffff;
 }
 
 .faq-list-item {
-    margin:10px;
-    border-bottom:1px solid #ccc;
+    margin:30px;
+    border-bottom:1px solid #000000;
     position:relative;
     cursor:pointer;
     text-align: left;
@@ -23,24 +26,23 @@
 
 .faq-list-item h3 {
     font-size: 1.2rem;
+    color: black;
 }
 
 .faq-list-item span{
     position:absolute;
     top:0;
     right:5px;
-    color:#ccc;
+    color: #000000;
     font-size:13px;
 }
 
-.answer {
-    font-size: 1rem;
+#answer {
+    font-size: 15px;
     padding: 0px 0px;
     margin-bottom: 5px;
     display:none;
+    color: #3a3a3a;
 }
 
-.answer:hover {
-    text-decoration:underline;
-}
 
