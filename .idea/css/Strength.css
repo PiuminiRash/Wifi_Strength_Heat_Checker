@@ -12,7 +12,7 @@
 .container:nth-child(2) h2 {
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .container:nth-child(2) p {
@@ -28,7 +28,7 @@
     width: 2%;
     height: 4.5%;
     position: absolute;
-    top: 128%;
+    top: 133%;
     right: 4%;
     background-color: white;
     opacity: 20%;
@@ -40,19 +40,6 @@
     position: absolute;
     top: 0;
     right: 5%;
-}
-
-.container:nth-child(2) input {
-    position: absolute;
-    border: 1px solid;
-    top: 125%;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    height: 5%;
-    background-color: white;
-    opacity: 30%;
-
 }
 
 #str {
